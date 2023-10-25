@@ -1,6 +1,5 @@
 import time
 from pprint import pprint
-import numpy
 
 def	clean_list(list):
 	list = {
@@ -31,13 +30,13 @@ def mateus_elc(cont, soup):
 				price = everything.find(class_="prices-price _current").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = numpy.float_(price.replace('€', '').replace(',', '.'))
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "NO"
 			elif (everything.find(class_="prices-price _offer")):
 				price = everything.find(class_="prices-price _offer").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = price
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "YES"
 			cont['capacity'] = "750ml"
 			wine_name = only_desc.text.strip()
@@ -68,13 +67,13 @@ def mateus_spark_elc(cont, soup):
 				price = everything.find(class_="prices-price _current").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = numpy.float_(price.replace('€', '').replace(',', '.'))
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "NO"
 			elif (everything.find(class_="prices-price _offer")):
 				price = everything.find(class_="prices-price _offer").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = price
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "YES"
 			cont['capacity'] = "750ml"
 			wine_name = only_desc.text.strip()
@@ -104,13 +103,13 @@ def trb_elc(cont, soup):
 				price = everything.find(class_="prices-price _current").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = numpy.float_(price.replace('€', '').replace(',', '.'))
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "NO"
 			elif (everything.find(class_="prices-price _offer")):
 				price = everything.find(class_="prices-price _offer").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = price
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "YES"
 			cont['capacity'] = "750ml"
 			wine_name = only_desc.text.strip()
@@ -140,13 +139,13 @@ def ppf_elc(cont, soup):
 				price = everything.find(class_="prices-price _current").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = numpy.float_(price.replace('€', '').replace(',', '.'))
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "NO"
 			elif (everything.find(class_="prices-price _offer")):
 				price = everything.find(class_="prices-price _offer").text
 				if (price.find("€") > 0):
 					cont['currency'] = "€"
-				cont['price'] = price
+				cont['price'] = float(price.replace(',', '.').replace('€', ''))
 				cont['discount'] = "YES"
 			cont['capacity'] = "750ml"
 			wine_name = only_desc.text.strip()

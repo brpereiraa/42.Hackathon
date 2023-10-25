@@ -1,6 +1,5 @@
 import time
 from pprint import pprint
-import numpy
 
 def	clean_list(list):
 	list = {
@@ -34,7 +33,7 @@ def mateus_gs(cont, soup):
 				cont['discount'] = "NO"
 			if (price.find("€") > 0):
 				cont['currency'] = "€"
-			cont['price'] = numpy.float_(price.strip().replace('€', '').replace(',', '.'))
+			cont['price'] = float(price.strip().replace('€', '').replace(',', '.'))
 			cont['capacity'] = "750ml"
 			name = name.split(" 75 Cl")
 			cont['wine'] = name[0]
@@ -65,7 +64,7 @@ def mateus_sparkling_gs(cont, soup):
 				cont['discount'] = "NO"
 			if (price.find("€") > 0):
 				cont['currency'] = "€"
-			cont['price'] = numpy.float_(price.strip().replace('€', '').replace(',', '.'))
+			cont['price'] = float(price.strip().replace('€', '').replace(',', '.'))
 			cont['capacity'] = "750ml"
 			name = name.split(" 75 Cl")
 			cont['wine'] = name[0]
@@ -96,7 +95,7 @@ def trb_gs(cont, soup):
 				cont['discount'] = "NO"
 			if (price.find("€") > 0):
 				cont['currency'] = "€"
-			cont['price'] = numpy.float_(price.strip().replace('€', '').replace(',', '.'))
+			cont['price'] = float(price.strip().replace('€', '').replace(',', '.'))
 			cont['capacity'] = "750ml"
 			name = name.split(" 75 Cl")
 			cont['wine'] = name[0]
@@ -127,7 +126,7 @@ def ppf_gs(cont, soup):
 				cont['discount'] = "NO"
 			if (price.find("€") > 0):
 				cont['currency'] = "€"
-			cont['price'] = numpy.float_(price.strip().replace('€', '').replace(',', '.'))
+			cont['price'] = float(price.strip().replace('€', '').replace(',', '.'))
 			cont['capacity'] = "750ml"
 			name = name.split(" 75 Cl")
 			cont['wine'] = name[0]

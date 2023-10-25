@@ -1,6 +1,5 @@
 import time
 from pprint import pprint
-import numpy
 
 def	clean_list(list):
 	list = {
@@ -33,7 +32,7 @@ def mateus_cont(cont, soup):
 					cont['currency'] = "€"
 				cont['capacity'] = "750ml"
 				cont['wine'] = everything.text
-				cont['price'] = numpy.float_(final_price.text.strip().replace('€', '').replace(',', '.'))
+				cont['price'] = float(final_price.text.strip().replace('€', '').replace(',', '.'))
 				cont['harv_year'] = "N/A"
 				html_element = soup.find('html')
 				lang_value = html_element.get('lang')
@@ -64,7 +63,7 @@ def	mateus_spark_cont(cont, soup):
 					cont['currency'] = "€"
 				cont['capacity'] = "750ml"
 				cont['wine'] = everything.text
-				cont['price'] = numpy.float_(final_price.text.strip().replace('€', '').replace(',', '.'))
+				cont['price'] = float(final_price.text.strip().replace('€', '').replace(',', '.'))
 				cont['harv_year'] = "N/A"
 				html_element = soup.find('html')
 				lang_value = html_element.get('lang')
@@ -95,7 +94,7 @@ def	trinca_bol_cont(cont, soup):
 					cont['currency'] = "€"
 				cont['capacity'] = "750ml"
 				cont['wine'] = everything.text
-				cont['price'] = numpy.float_(final_price.text.strip().replace('€', '').replace(',', '.'))
+				cont['price'] = float(final_price.text.strip().replace('€', '').replace(',', '.'))
 				cont['harv_year'] = "N/A"
 				html_element = soup.find('html')
 				lang_value = html_element.get('lang')
@@ -126,7 +125,7 @@ def	papa_fig_cont(cont, soup):
 					cont['currency'] = "€"
 				cont['capacity'] = "750ml"
 				cont['wine'] = everything.text
-				cont['price'] = numpy.float_(final_price.text.strip().replace('€', '').replace(',', '.'))
+				cont['price'] = float(final_price.text.strip().replace('€', '').replace(',', '.'))
 				cont['harv_year'] = "N/A"
 				html_element = soup.find('html')
 				lang_value = html_element.get('lang')

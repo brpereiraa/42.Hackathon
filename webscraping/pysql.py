@@ -46,3 +46,29 @@ def insert_wine(obj):
 			cursor.close()
 			connection.close()
 			print("MySQL connection is closed")
+
+def get_search_list():
+	try:
+		connection = mysql.connector.connect(host='localhost',
+											database='mydb',
+											user='user',
+											password='H@ckathon#42',
+											auth_plugin='mysql_native_password')
+		if connection.is_connected():
+			db_Info = connection.get_server_info()
+			print("Connected to MySQL Server version ", db_Info)
+			cursor = connection.cursor()
+			cursor.execute("SELECT * FROM List")
+			result = cursor.fetchall()
+			if not result:
+				print("Error getting data from database.")
+			else:
+				print("Successfully retrieved data from the database.")
+			return result
+	except Error as e:
+		print("Error while connecting to MySQL", e)
+	finally:
+		if connection.is_connected():
+			cursor.close()
+			connection.close()
+			print("MySQL connection is closed")
