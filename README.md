@@ -6,7 +6,7 @@ Between the afternoon of the 23rd and the morning of the 26th October 2023, Sogr
 The challenge the participants were tasked with was implementing a web scraping system able to collect wine prices from national online stores on a daily basis, and to develop an interactive and intuitive interface to display the same data.
 
 
-We are presenting an automated web scraping website that will allow Sogrape’s employees to easily compare pricing between several retailers for the same product, and to keep track of price fluctuations over time, in an automated manner. Our website effectively addresses compatibility and portability issues, not requiring any installation.
+We are presenting an automated web scraping website that will allow Sogrape’s employees to easily compare pricing between several retailers for the same product, and to keep track of price fluctuations over time, in an automated manner.
 
 
 ## Prerequisites
