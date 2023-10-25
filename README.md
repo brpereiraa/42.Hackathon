@@ -46,9 +46,12 @@ Before you begin, ensure you have met the following requirements:
    - Install the required packages using pip:
 
     ```bash
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     ```
-
+    or install them individually using:
+   ```bash
+    pip install <package>
+    ```
 ## Usage
 
 1. **Start XAMPP:**
