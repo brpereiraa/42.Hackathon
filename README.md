@@ -60,12 +60,7 @@ Before you begin, ensure you have met the following requirements:
    - Click "Start" next to Apache.
   
 2. **Run an SQL server instance and use our 'mydb_wine.sql' file:**
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-    ```
+   This will ensure you are connected to a database that our program is compatible with. It can also run on any web server/host.
 
 4. **Access your PHP website:**
 
