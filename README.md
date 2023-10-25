@@ -58,13 +58,15 @@ Before you begin, ensure you have met the following requirements:
 
    - Launch XAMPP Control Panel.
    - Click "Start" next to Apache.
+  
+2. **Run an SQL server instance and use our 'mydb_wine.sql' file:**
 
-2. **Access your PHP website:**
+3. **Access your PHP website:**
 
    - Ensure XAMPP is running.
    - Click "Admin" button to acces the root/index of our website.
 
-3. **Run the Python code:**
+4. **Run the Python code:**
 
    - Open a terminal/command prompt.
    - Navigate to your project directory.
@@ -73,7 +75,9 @@ Before you begin, ensure you have met the following requirements:
     ```bash
     python main.py
     ```
-
+5. **Refresh the dashboard using the button**
+    All the data of the SQL will appear.
+   
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
