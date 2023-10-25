@@ -1,11 +1,11 @@
 # team-10
 
 # Sogrape Webscraper
-Challenge / Opportunity
+
 Between the afternoon of the 23rd and the morning of the 26th October 2023, Sogrape and 42 Porto hosted a Hackathon under the following theme: “Online Wine Price Harvesting Challenge”.
 The challenge the participants were tasked with was implementing a web scraping system able to collect wine prices from national online stores on a daily basis, and to develop an interactive and intuitive interface to display the same data.
 
-Approach to the challenge
+
 We are presenting an automated web scraping website that will allow Sogrape’s employees to easily compare pricing between several retailers for the same product, and to keep track of price fluctuations over time, in an automated manner. Our website effectively addresses compatibility and portability issues, not requiring any installation.
 
 
